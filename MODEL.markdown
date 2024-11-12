@@ -12,7 +12,7 @@
 * [Future Performance analysis](#future-performance)
 * [Past Performance analysis](#past-performance)
 * [Financial Health analysis](#health)
-* [Dividends analysis](#income-dividends)
+* [Dividends and Buybacks analysis](#income-dividends)
 * [Management analysis](#management)
 
 Overview of the model
@@ -878,11 +878,15 @@ scored one point.
 
 
 
-**Income (Dividends)**
+**Dividends and Buybacks**
 ----------------------
 
-The Income section of the SWS app provides an analysis of a company's
+The Dividends section of the SWS app provides an analysis of a company's
 dividend (income) payments to its shareholders.
+
+Note: We now include the following data points to complement the Dividend section:
+- Buyback yield
+- Total shareholder yield
 
 The app analyses the dividend payment in terms of its dividend yield
 against other dividend payers. In addition, the app analyses the
@@ -907,7 +911,9 @@ Data points used to in the Income analysis:
   -------------------------------------------| ------------------------------------------
   Dividend yield (End of day to -10 years)   |  Annual
   Dividend per share (LTM to -10 years)      |  Annual, last reported
-  Payout ratio                              |  Last reported
+  Dividend Growth Rate (annual)           |  Calculated from linear regression of historial payments
+  Earnings Payout ratio                              |  Last reported
+  Cash Payout ratio                              |  Last reported
   Estimate of Dividend per Share (+3 years) |  Annual, from analyst consensus estimates
   Estimate of GAAP Earnings per Share (+3 years) |  Annual, from analyst consensus estimates
   
